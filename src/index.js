@@ -7,10 +7,5 @@ exports.max = function max(array) {
 };
 
 exports.avg = function avg(array) {
-    if (!array || array.length === 0) {
-        return 0;
-    } else {
-        let sum = array.reduce((a, b) => a + b);
-        return (sum / array.length);
-    }
-}
+    return !array || array.length === 0 ? 0 : array.reduce((a, b) => a + b) / array.length;
+};
